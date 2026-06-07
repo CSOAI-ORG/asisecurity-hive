@@ -1,0 +1,71 @@
+{
+  "name": "asisecurity",
+  "description": "AI security for AI systems — defensive, threat-modelling.",
+  "url": "https://asisecurity.ai",
+  "version": "0.1.0",
+  "provider": {
+    "organization": "CSOAI-ORG",
+    "url": "https://csoai.org"
+  },
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": false,
+    "stateTransitionHistory": true
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text",
+    "json"
+  ],
+  "skills": [
+    {
+      "id": "cybersecurity-ai-mcp",
+      "name": "cybersecurity-ai-mcp",
+      "description": "Tool: cybersecurity-ai-mcp (part of asisecurity.ai hive L5)"
+    },
+    {
+      "id": "owasp-agentic-mcp",
+      "name": "owasp-agentic-mcp",
+      "description": "Tool: owasp-agentic-mcp (part of asisecurity.ai hive L5)"
+    },
+    {
+      "id": "security-scanner-ai-mcp",
+      "name": "security-scanner-ai-mcp",
+      "description": "Tool: security-scanner-ai-mcp (part of asisecurity.ai hive L5)"
+    },
+    {
+      "id": "a2a-mesh",
+      "name": "Cross-hive A2A call",
+      "description": "Can call other MEOK hives via A2A (with user consent)"
+    },
+    {
+      "id": "memoria-commit",
+      "name": "Versioned memory commit",
+      "description": "Commits to memoria namespace 'asisecurity'"
+    }
+  ],
+  "securitySchemes": {
+    "oauth2": {
+      "type": "oauth2",
+      "flows": {
+        "authorizationCode": {
+          "authorizationUrl": "https://asisecurity.ai/oauth/authorize",
+          "tokenUrl": "https://asisecurity.ai/oauth/token",
+          "scopes": {
+            "read": "Read hive state",
+            "write": "Invoke tools (x402-metered)",
+            "audit": "Read audit trail"
+          }
+        }
+      }
+    }
+  },
+  "x402Pricing": {
+    "enabled": true,
+    "currency": "USD",
+    "amount": "0.30",
+    "freeCallsPerIPPerDay": "1"
+  }
+}
