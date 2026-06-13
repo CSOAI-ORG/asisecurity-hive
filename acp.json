@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "asisecurity",
+    "description": "AI security for AI systems \u2014 defensive, threat-modelling.",
+    "version": "0.1.0",
+    "provider": "CSOAI-ORG",
+    "interfaces": [
+      {
+        "type": "a2a",
+        "url": "https://asisecurity.ai"
+      }
+    ],
+    "capabilities": [
+      "cybersecurity-ai-mcp",
+      "owasp-agentic-mcp",
+      "security-scanner-ai-mcp",
+      "a2a-mesh",
+      "memoria-commit"
+    ]
+  }
+}
