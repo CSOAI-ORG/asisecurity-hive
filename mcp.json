@@ -1,0 +1,14 @@
+{
+  "name": "asisecurity.ai",
+  "title": "ASI Security — Advanced AI Security",
+  "description": "Next-generation security for advanced and superintelligent AI systems, including containment and value locking.",
+  "cluster": "COMPLIANCE",
+  "servers": [
+        { "id": "asi-containment-mcp.sov3.meok.ai", "url": "https://asi-containment-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" },
+    { "id": "value-lock-mcp.sov3.meok.ai", "url": "https://value-lock-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" },
+    { "id": "superintelligence-mcp.sov3.meok.ai", "url": "https://superintelligence-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" }
+  ],
+  "registrar": "https://mcp-registry.sov3.meok.ai/register",
+  "protocol": "https://openMCP.ai/protocol",
+  "$schema": "https://openMCP.ai/schemas/mcp-server-list.json"
+}
